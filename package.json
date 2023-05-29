@@ -1,0 +1,23 @@
+{
+  "name": "final-project-4mayo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "APItests": "npx mocha api_tests --reporter mochawesome --reporter-options reportDir=customReportDir,reportFilename=api-results --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2"
+  },
+  "dependencies": {
+    "cypress": "^12.13.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "npm": "^9.6.7",
+    "npx": "^10.2.2",
+    "pactum": "^3.4.1"
+  }
+}
