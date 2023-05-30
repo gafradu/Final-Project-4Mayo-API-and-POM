@@ -56,7 +56,7 @@ describe("Get all notes Endpoint Scenarios", () => {
     }
   });
 
-  it("Get all notes Positive Test", async () => {
+  it("Get all notes Positive test", async () => {
     await spec()
       .get(`${baseURL}/notes`)
       .withHeaders({
