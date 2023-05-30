@@ -5,7 +5,7 @@
   "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "APItests": "npx mocha api_tests/methods-get-all-notes.test --reporter mochawesome --reporter-options reportDir=customReportDir,reportFilename=api-results --timeout 10000"
+    "APItests": "npx mocha api_tests/methods-get-all-notes.test.js --reporter mochawesome --reporter-options reportDir=customReportDir,reportFilename=api-results --timeout 10000"
   },
   "author": "",
   "license": "ISC",

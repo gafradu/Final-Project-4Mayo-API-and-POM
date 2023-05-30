@@ -2,6 +2,7 @@ const { spec } = require("pactum");
 const { faker } = require("@faker-js/faker");
 const getPostsSchema = require("../data/response/get-notes-schema.json");
 const generalMethods = require("../data/methods/generalMethods");
+const { generateRandomNote } = require('../utils/create-note');
 
 const baseURL = "https://practice.expandtesting.com/notes/api";
 const totalNumberOfNotes = 5;
@@ -52,7 +53,8 @@ describe("Get all notes Endpoint Scenarios", () => {
     console.log(authToken);
 
     for (let i = 1; i < totalNumberOfNotes; i++) {
-      generalMethods.addSingleRandomNote(baseURL, authToken);
+      // generalMethods.addSingleRandomNote(baseURL, authToken);
+      await generateRandomNote(baseURL, authToken);
     }
   });
 
